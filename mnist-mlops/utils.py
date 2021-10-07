@@ -1,3 +1,5 @@
+# import packages
+
 from skimage.transform import rescale
 from sklearn.model_selection import train_test_split
 from sklearn import metrics
