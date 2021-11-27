@@ -18,7 +18,8 @@ import pandas as pd
 
 digits = datasets.load_digits()
 
-parent_directory = '/mnt/c/Users/Stuti Pathak/Desktop/IIT Jodhpur/Semester 3/MLOps/MNIST-MLOPS'
+#parent_directory = '/mnt/c/Users/Stuti Pathak/Desktop/IIT Jodhpur/Semester 3/MLOps/MNIST-MLOPS'
+parent_directory = os.getcwd()
 if not os.path.exists(parent_directory + '/models'):
     os.mkdir(parent_directory+'/models')
 parent_directory += '/models'
