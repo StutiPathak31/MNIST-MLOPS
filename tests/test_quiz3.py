@@ -131,5 +131,14 @@ def test_DT_digit_correct_9():
     assert predicted==9
 
 def test_threshold_SVM():
+    correct = [0 for i in range(10)]
+    total = [0 for i in range(10)]
+    for i in range(n_samples):
+        image = data[i].reshape(1, -1)
+        predicted = clf_SVM.predict(image)
+        if predicted == target[i]:
+            correct[target[i]] += 1
+        total[target[i]] += 1
+    print(total) 
 
 

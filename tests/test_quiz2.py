@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.insert(1, '/mnt/c/Users/Stuti Pathak/Desktop/IIT Jodhpur/Semester 3/MLOps/MNIST-MLOPS/mnist-mlops')
+sys.path.insert(1, '/mnt/c/Users/Stuti Pathak/Desktop/IIT Jodhpur/Semester 3/MLOps/MNIST-MLOPS/mnist_mlops')
 print(os.getcwd())
 from sklearn import datasets
 from utils import create_splits, preprocess
